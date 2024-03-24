@@ -1,5 +1,21 @@
 # Q. Does it automatically zero-initialized?
 
+## No
+```
+struct A { int x; };
+struct B { int x; B() = default; };
+A a;
+B b;
+```
+
+## Yes
+```
+struct A { int x; };
+struct B { int x; B() = default; };
+A a{}; auto a = A(); auto a = A{};
+B b{}; auto b = B(); auto b = B{};
+```
+
 ## Compiler
 ```
 > clang++ --version
