@@ -42,6 +42,7 @@ InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault
 ## References
 * [Stack overflow QnA](https://stackoverflow.com/questions/2417065/does-the-default-constructor-initialize-built-in-types)
 * [r/programming](https://www.reddit.com/r/programming/comments/akn5jx/initialization_in_c_is_seriously_bonkers/)
+* [P2723R1 for C++26](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2723r1.html), blocked by [P2795 R4](https://github.com/cplusplus/papers/issues/1460) as of Mar 24 2024
 * ISO/IEC 14882:2020(E) Section 9.4.1.8
 ```
 8 To value-initialize an object of type T means:
