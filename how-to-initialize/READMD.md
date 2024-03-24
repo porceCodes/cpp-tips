@@ -11,9 +11,18 @@ B b;
 ## Yes
 ```
 struct A { int x; };
-struct B { int x; B() = default; };
+struct B { int x; B() = default; }; // Remark XX
 A a{}; auto a = A(); auto a = A{};
 B b{}; auto b = B(); auto b = B{};
+```
+
+### Remark XX
+```
+When a trivial type is zero-initialized (for example, through value initialization {}), its data members will also be zero-initialized.
+
+(According to C++ Reference: The standard specifies that zero-initialization is not performed when the class has a user-provided or deleted default constructor, which implies that whether said default constructor is selected by overload resolution is not considered. All known compilers perform additional zero-initialization if a non-deleted defaulted default constructor is selected.)
+
+Filipek, Bartlomiej. C++ Initialization Story: A Guide Through All Initialization Options and Related C++ Areas (C++ Stories) (p. 378). Bartłomiej Filipek. Kindle Edition. 
 ```
 
 ## Compiler
