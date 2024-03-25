@@ -1,4 +1,4 @@
-# Q. Does it automatically zero-initialized?
+# Q. Does it automatically zero-initialize?
 
 ## No
 ```
