@@ -10,6 +10,7 @@ int main()
     int cnt_a1{}, cnt_a2{}, cnt_a3{}, cnt_a4{}, cnt_a5{};
     int cnt_b1{}, cnt_b2{}, cnt_b3{}, cnt_b4{}, cnt_b5{};
 
+    // TODO: A correct way should involve the heap memory in different locations
     for (size_t i = 0; i < 10000; ++i)
     {
         // struct A
